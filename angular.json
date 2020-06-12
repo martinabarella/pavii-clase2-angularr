@@ -10,7 +10,7 @@
       "prefix": "app",
       "schematics": {},
       "architect": {
-        "build": {s
+        "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/demo",
@@ -26,6 +26,7 @@
               "src/styles.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
+
 
             ],
             "scripts": [
