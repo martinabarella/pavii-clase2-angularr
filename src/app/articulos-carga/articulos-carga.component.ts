@@ -17,8 +17,9 @@ export class ArticulosCargaComponent implements OnInit {
 
   ngOnInit() {
     this.fg = this.fb.group({
-      IdArticuloFamilia : [''],
-      Nombre: ['']
+      IdArticuloFamilia : ['',[Validators.required,Validators.maxLength(5),
+      Validators.pattern('^[0-9]*$')]],
+      Nombre: ['',[Validators.required]]
     })
   }
 
@@ -26,6 +27,7 @@ export class ArticulosCargaComponent implements OnInit {
   ArticulosFamilias.push({ 
     IdArticuloFamilia: Number(this.fg.value.IdArticuloFamilia),
     Nombre: this.fg.value.Nombre});
+  window.alert('Articulo cargado.')
   }
 
 }
