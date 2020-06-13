@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ArticuloFamilia } from '../models/articulofamilia'
-import {ArticulosFamilias } from '../models/articulosfamiliacoleccion'
+import { ArticulosFamilias } from '../models/articulosfamiliacoleccion'
+import { ArticuloFamilia } from '../models/articulofamilia';
 
 @Component({
   selector: 'app-articulos-lista',
@@ -9,12 +9,22 @@ import {ArticulosFamilias } from '../models/articulosfamiliacoleccion'
 })
 export class ArticulosListaComponent implements OnInit {
   listaArticulos: ArticuloFamilia[];
-
+  verGrilla = false;
+  mensajeBoton = 'Mostrar Grilla'
 
   constructor() { }
 
   ngOnInit(): void {
     this.listaArticulos = ArticulosFamilias;
+  }
+  mostrarOcultarGrilla(){
+    
+    this.mensajeBoton = this.verGrilla?'Mostrar Grilla':'Ocultar Grilla'
+    this.verGrilla = !this.verGrilla;
+    
+    //el de arriba t lo niega, abajo entonces si es true oculta, si es false lomuestra
+    //this.mensajeBoton = this.verGrilla?'Ocultar Grilla':'Mostrar Grilla'
+
   }
 
 }

@@ -1,6 +1,8 @@
 
-<input type="button" (click)='MostrarOcultarGrilla()' [value]='mensajeBoton' />
-<h1>Lista articulos</h1>
+<!--Es lo mismo
+<input type="button" (click)='mostrarOcultarGrilla()' value={{mensajeBoton}}/>-->
+<input type="button" (click)='mostrarOcultarGrilla()' [value] ='mensajeBoton'/>
+
 <table class="table table-striped" *ngIf='verGrilla'>
     <thead class="thead-inverse">
         <tr>
@@ -15,3 +17,9 @@
         </tr>
     </tbody>
 </table>
+
+
+<!-- 
+ngfor podes usar algo que este en el cnntrolador, en este caso listaArticulos
+y por cada objet de la lista recupero su valor
+-->

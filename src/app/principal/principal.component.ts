@@ -6,8 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent implements OnInit {
-  materia = 'PAV III';  
-  verMateria = true;
+  logo = 'https://www.frc.utn.edu.ar/imagenes/logoutn.gif';
 
 
 
