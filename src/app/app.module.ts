@@ -13,9 +13,9 @@ import { ArticulosCargaComponent } from './articulos-carga/articulos-carga.compo
    RouterModule.forRoot([
       {path: 'listaarticulos/:id', component: ArticulosListaComponent},
       {path: 'listaarticulos', component: ArticulosListaComponent},
-      {path: 'cargaarticulos', component: ArticulosCargaComponent},
+      {path: 'cargararticulos', component: ArticulosCargaComponent},
       {path: 'principal', component: PrincipalComponent},
-      {path: '', component: PrincipalComponent}
+      {path: ' ', component: PrincipalComponent}
    ]) ],
 
   declarations: [ MenuComponent, PrincipalComponent, ArticulosListaComponent, ArticulosCargaComponent ],
