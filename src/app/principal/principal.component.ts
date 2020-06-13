@@ -6,14 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent implements OnInit {
-  mensaje: string;  
+  materia = 'PAV III';  
+  verMateria = true;
 
 
 
   constructor() { }
 
   ngOnInit() {
-    this.mensaje = "Hola mundo!!!!"
+    
   }
 
 }

@@ -1,0 +1,17 @@
+
+<input type="button" (click)='MostrarOcultarGrilla()' [value]='mensajeBoton' />
+<h1>Lista articulos</h1>
+<table class="table table-striped" *ngIf='verGrilla'>
+    <thead class="thead-inverse">
+        <tr>
+            <th>ID del artículo</th>
+            <th>Nombre</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let art of listaArticulos">
+            <td>{{art.IdArticuloFamilia}}</td>
+            <td>{{art.Nombre}}</td>
+        </tr>
+    </tbody>
+</table>
